@@ -1,0 +1,162 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./font/RobotoSerif-Regular.ttf);
+}
+
+* {
+    cursor: none !important;
+    font-family: Roboto;
+}
+
+body {
+    margin: 0;
+}
+
+#cursor {
+    position: fixed;
+    z-index: 99999;
+}
+
+.flex-c {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.flex-r {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.cur {
+    position: fixed;
+    z-index: 900;
+    pointer-events: none;
+    top: calc((5/2) * -1px);
+    left: calc((5/2) * -1px);    
+}
+
+.cur-mid {
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.side {
+    height: 5px;
+    width: 5px;
+    transition: all 0.3s ease;
+}
+
+#side1 {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+#side2 {
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+#side3 {
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+#side4 {
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.plus {
+    background-color: white;
+    transition: all 0.2s ease;
+}
+
+#plus1 {
+    height: 5px;
+    width: 1px;
+}
+#plus2 {
+    height: 1px;
+    width: 5px;
+}
+#plus3 {
+    height: 5px;
+    width: 1px;
+}
+#plus4 {
+    height: 1px;
+    width: 5px;
+}
+
+.object-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 400px;
+}
+
+.panjang {
+    height: 200px;
+    width: 400px;
+    
+}
+.panjang:hover {
+    height: 220px;
+    width: 420px;
+}
+
+/* second sursor */
+
+.x-cursor {
+    opacity: 0.9;
+    filter: drop-shadow(0 0 20px white);
+    position: relative;
+}
+
+.cur-dot {
+    position: fixed;
+    height: 3px;
+    width: 3px;
+    background-color: black;
+    border-radius: 1000px;
+    top: 1.5px;
+    left: 1.5px; 
+    transition: opacity 0.5s ease, height 0.5s ease, width 0.5s ease;
+}
+
+.x1-wrap {
+    transition: transform 0.1s ease-out, left 0.5s ease;
+}
+.x2-wrap {
+    transition: transform 0.3s ease-out, left 0.5s ease;
+}
+
+.x1, .x2 {
+    position: relative;
+    top: -20px;
+    left: 3px;
+    transition: all 0.5s ease;
+}
+
+.x1 {
+    height: 50px;
+    width: 5px;
+    rotate: 45deg;
+    background-color: black;
+    
+}
+
+.x2 {
+    height: 50px;
+    width: 5px;
+    rotate: -45deg;
+    background-color: black;
+}
+
+.cur-dot, .x1, .x2 {
+    mix-blend-mode: difference;
+}
