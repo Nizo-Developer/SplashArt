@@ -1,16 +1,16 @@
 import { setCursor } from "./brain.js";
 
 const side = [
-  "../img/picture.jpeg",
-  "../img/picture.jpg",
-  "../img/picture1.jpeg",
-  "../img/picture1.jpg",
-  "../img/picture2.jpeg",
-  "../img/picture2.jpg",
-  "../img/picture3.jpeg",
-  "../img/picture3.jpg",
-  "../img/picture4.jpeg",
-  "../img/picture5.jpeg",
+  "./img/picture.jpeg",
+  "./img/picture.jpg",
+  "./img/picture1.jpeg",
+  "./img/picture1.jpg",
+  "./img/picture2.jpeg",
+  "./img/picture2.jpg",
+  "./img/picture3.jpeg",
+  "./img/picture3.jpg",
+  "./img/picture4.jpeg",
+  "./img/picture5.jpeg",
 ]
 
 const data = [
